@@ -1,17 +1,29 @@
 def consolidate_cart(cart)
   # code here
-  hash = {}
-  cart.each do |i_hash|
-    i_hash.each do |item, info|
-      if i_hash.include?(item)
-        hash[item][:count] += 1
-      else
-        hash[item] = info
-        hash[item][:count] = 1
+array = []
+cart.each do |i_cart|
+  i_cart.each do |item, info|
+    array << item
+  end
+  array
+end
+
+cosolidated_cart = {}
+
+array.each do |item|
+  cart.each do |i_cart|
+    i_cart.each do |item, info|
+      if consolidated_cart.has_key?(item) == false
+        consolidated_cart[item = {}
+        info.each do |key, value]
+          consolidated_cart[item][key] = value
+          consolidated_cart[item][:count] = array.count(item)
+        end
       end
     end
+  end
 end
-hash
+consolidated_cart
 end
 
 def apply_coupons(cart, coupons)
