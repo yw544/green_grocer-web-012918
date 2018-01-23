@@ -2,7 +2,7 @@ def consolidate_cart(cart)
   # code here
   hash = {}
   cart.each do |i_hash|
-    item.each do |item, info|
+    i_hash.each do |item, info|
       if i_hash.include?(item)
         hash[item][:count] += 1
       else
