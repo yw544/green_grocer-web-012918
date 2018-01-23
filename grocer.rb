@@ -8,7 +8,7 @@ cart.each do |i_cart|
   array
 end
 
-cosolidated_cart = {}
+consolidated_cart = {}
 
 array.each do |item|
   cart.each do |i_cart|
