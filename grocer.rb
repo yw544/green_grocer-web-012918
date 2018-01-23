@@ -15,7 +15,7 @@ array.each do |item|
     i_cart.each do |item, info|
       if consolidated_cart.has_key?(item) == false
         consolidated_cart[item = {}
-        info.each do |key, value]
+        info.each do |key, value|
           consolidated_cart[item][key] = value
           consolidated_cart[item][:count] = array.count(item)
         end
